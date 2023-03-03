@@ -1,5 +1,5 @@
 terraform {
-    source = "git@github.com:19bytes/terragrunt-demo.git//qa?ref=v0.0.1"
+    source = "git::git@github.com:19bytes/terragrunt-demo.git//stage/qa?ref=v0.0.1"
 }
 
 inputs = {
