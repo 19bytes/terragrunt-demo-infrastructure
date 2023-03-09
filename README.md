@@ -6,7 +6,7 @@ Eine Umgebungsvariable setzen:
 
 ```bash
 # Unix
-export TF_VARS_hcloud_token="YourCloudToken"
+export TF_VAR_hcloud_token="YourCloudToken"
 ```
 
 Näheres zum Hetzner Cloud Token finden wir hier: [Terragrunt Demo Modules](https://github.com/19bytes/terragrunt-demo/tree/develop#notepad-before-2023-03-01)
