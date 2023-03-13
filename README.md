@@ -14,8 +14,8 @@ Näheres zum Hetzner Cloud Token finden wir hier: [Terragrunt Demo Modules](http
 Ist der Cloud Token als Umgebungsvariable vorhanden können wir das Beispiel ausführen:
 
 ```bash
-terragrunt plan-all
+terragrunt run-all plan
 # Output kontrollieren
-terragrunt apply-all
+terragrunt run-all apply 
 # Mit (y) gestätigen
 ```
