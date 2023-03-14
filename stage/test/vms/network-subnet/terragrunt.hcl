@@ -14,6 +14,11 @@ terraform {
 
 dependency "nw" {
   config_path = "../network"
+
+  mock_outputs = {
+    id = 123456789
+  }
+  mock_outputs_allowed_terraform_commands = ["validate", "plan"]
 }
 
 inputs = {

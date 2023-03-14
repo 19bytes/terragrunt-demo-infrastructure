@@ -16,15 +16,14 @@ dependency "pg" {
   config_path = "../placement-group"
 
   mock_outputs = {
-    vpc_id = "temporary-dummy-pg-name"
+    id = 123456789
   }
   mock_outputs_allowed_terraform_commands = ["validate", "plan"]
 }
-
 
 inputs = {
   server_name = "database"
   server_image = "ubuntu-22.04"
   server_location = "nbg1"
-  server_placement_group = dependency.pg.outputs.name
+  server_placement_group_id = dependency.pg.outputs.id
 }

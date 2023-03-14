@@ -14,10 +14,20 @@ terraform {
 
 dependency "server" {
   config_path = "../server"
+
+  mock_outputs = {
+    id = 123456789
+  }
+  mock_outputs_allowed_terraform_commands = ["validate", "plan"]
 }
 
 dependency "subnet" {
   config_path = "../network-subnet"
+
+  mock_outputs = {
+    id = 123456789
+  }
+  mock_outputs_allowed_terraform_commands = ["validate", "plan"]
 }
 
 inputs = {
