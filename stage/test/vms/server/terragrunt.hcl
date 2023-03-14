@@ -14,7 +14,13 @@ terraform {
 
 dependency "pg" {
   config_path = "../placement-group"
+
+  mock_outputs = {
+    vpc_id = "temporary-dummy-pg-name"
+  }
+  mock_outputs_allowed_terraform_commands = ["validate", "plan"]
 }
+
 
 inputs = {
   server_name = "database"
